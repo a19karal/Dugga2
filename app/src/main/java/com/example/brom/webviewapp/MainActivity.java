@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
+    // Create a private member variable that can hold our WebView
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        /* The FAB-code can be removed */
+        // The FAB-code can be removed
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -28,7 +29,13 @@ public class MainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+        // 1. Create a WebView element in the layout file content_main.xml
+        // 2. Give the WebView element created in step 1 ID "my_webview"
         // Enter your code that creates your WebView here...
+        // 3. Locate the WebView element created in step 1 using the ID created in step 2
+        // 4. Create a new WebViewClient to attach to our WebView. This allows us to
+        //    browse the web inside our app.
+        // 5. Enter the url to load in our WebView
     }
 
     @Override

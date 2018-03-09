@@ -22,6 +22,7 @@
 
     <include layout="@layout/content_main" />
 
+    <!-- The FAB element can be removed -->
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_width="wrap_content"

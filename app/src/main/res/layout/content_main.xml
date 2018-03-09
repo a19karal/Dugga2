@@ -8,6 +8,7 @@
     tools:context="com.example.brom.webviewapp.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <!-- The TextView element can be replaced by a WebView element -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
