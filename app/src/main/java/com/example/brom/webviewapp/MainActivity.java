@@ -41,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         // 6. Enable Javascript execution in your WebViewClient
         // 7. Enter the url to load in our WebView
         // -- Commit and push to your github fork
+        // 8. Take a snapshot showing your App
     }
 
     @Override
