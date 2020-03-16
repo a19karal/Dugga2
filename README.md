@@ -1,2 +1,2 @@
 # WebViewApp
-Seed code for lab "Assignment - WebViewApp"
+Seed code for lab "Assignment - WebView"
