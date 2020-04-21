@@ -12,14 +12,18 @@ import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-public class kMainActivity extends AppCompatActivity {
-
-    public void showExternalWebPage(){
+public class MainActivity extends AppCompatActivity {
+    WebView webView;
+    public void showExternalWebPage()
+    {
         // TODO: Add your code for showing external web page here
+        webView.loadUrl("https://www.google.com");
     }
 
-    public void showInternalWebPage(){
+    public void showInternalWebPage()
+    {
         // TODO: Add your code for showing internal web page here
+        webView.loadUrl("file:///android_asset/about.html");
     }
 
     @Override
@@ -29,8 +33,9 @@ public class kMainActivity extends AppCompatActivity {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        WebView webView = new WebView(this);
+        webView = findViewById(R.id.myWebView);
         webView.loadUrl("https://www.google.com");
+
         /*
         * Rename your App. Tip: Values->Strings
         * Enable Internet access for your App. Tip: Manifest
@@ -83,11 +88,13 @@ public class kMainActivity extends AppCompatActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_external_web) {
             Log.d("==>","Will display external web page");
+            showExternalWebPage();
             return true;
         }
 
         if (id == R.id.action_internal_web) {
             Log.d("==>","Will display internal web page");
+            showInternalWebPage();
             return true;
         }
 
